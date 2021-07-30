@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+/* -----------------------Home page-------------- */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: red;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.textbox{
+    width:90%;
+    color:white ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 40px;
+}
+.textbox h2{
+    margin:10px 0 40px;
+    font-size: 14px;
+    color:white;
+}
+/* ----------------------------What we do section----------- */
+.section{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ddd;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/image1.jpg) ;
+    background-size: cover;
+
+}
+.container{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 100px;
+}
+.content-section{
+    float:left;
+    width: 55%;
+    color: white;
+}
+.image-section{
+    float:right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height:auto;
+}
+.content-section.title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section.content h4{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 15px;
+}
+/* --------------About us Section---------------- */
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/image4.jpg);
+    background-size: cover;
+}
+
+/* -----------Contact Us Section--------------- */
+.contact.content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact.content h5{
+    font-size: 36px;
+    font-weight: 500;
+    color:white;
+}
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container1.contactInfo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1.contactInfo.box{
+    position: relative;
+    padding:20px;
+    display:flex;
+}
+.container1.contactInfo.box.text{
+    display:flex;
+    margin-left:20px;
+    font-size: 20px;
+    color:#fff;
+    flex-direction: column;
+    font-weight:200;
+}
+.container1.contactInfo.box.text h6{
+    font-weight: 500;
+    color:#fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
